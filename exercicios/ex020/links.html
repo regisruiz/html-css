@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style> 
+
+        /*  Seletores Personalizados        
+            #  - id
+            .  - class
+            :  - pseudo-class
+            :: - pseudo-element
+            >  - children (filho)        
+        */
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.3em;            
+        }
+        a{
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited{
+            color: green;            
+        }
+        a:hover{
+            text-decoration: underline;
+            color: black;
+        }
+        a:active{
+            color: yellow;
+        }
+        a::before{
+            content: '✿ ';
+        }
+        .especial::before{
+            content: '✠ ';
+        }
+        a::after{
+            content: ' [ link ]';
+            font-weight: normal;
+            text-decoration: none;
+            color: blue;
+        }
+        .destaque{
+            font: 36px Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color: blue;             
+        }
+        .logo3{
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io" target="_blank">Repósitorio GitHub</a></li>
+        <li><a href="https://youtube.com/cursoemvideo/" target="_blank">Canal do YouTube</a></li>
+        <li><a href="https://www.cursoemvideo.com" target="_blank" class="especial">Site Curso em Video</a></li>
+    </ul>
+    <hr>
+    <h2 class="destaque">Imagens Logo LuSena</h2>    
+    <img src="img/logo3.jpg" alt="logo3" class="logo3">
+</body>
+</html>

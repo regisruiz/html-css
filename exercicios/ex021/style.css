@@ -1,0 +1,58 @@
+@charset "UTF-8";
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:cornsilk;  
+    margin: auto;
+    width: 1200px;
+}
+header{
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px rgba(56, 56, 56, 0.432);
+}
+nav{
+    background-color: darkgray;
+    padding: 5px;
+    box-shadow: 3px 3px 3px rgba(65, 64, 64, 0.712);
+}
+nav > a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+nav > a:hover{
+    text-decoration: underline;
+    color: rgb(67, 67, 241);    
+}
+Main{
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px rgba(56, 56, 56, 0.432);
+}
+
+article{
+    background-color: rgb(235, 235, 235);
+    padding: 5px;
+    margin-top: 7px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px rgba(56, 56, 56, 0.432);
+}
+aside{
+    background-color: rgb(218, 216, 216);
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 5px;
+    text-align: center;   
+}  
+footer > p{
+        margin: 0px;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos com HTML5</title>
+    <style>
+        body{
+            background-color: rgba(176, 245, 222, 0.541);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            padding-left: 40px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Inserindo videos hospedados localmente</h1>
+    <p>Este video esta hospedado no meu próprio servidor.</p>
+    <video width="500" height="300"poster="Imagens/capa.jpg" controls autoplay loop>
+        <source src="midia/caiaque.webm" type="video/webm">
+        <source src="midia/caiaque.mp4" type="video/mp4">
+    </video>
+
+    <h1>Inserindo Video do YouTube</h1>
+    <iframe width="500" height="300" src="https://www.youtube.com/embed/eV4UcOAIP-4?si=rky-uQynCb8KM1zm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <h1>Inserindo video do VIMEO</h1>
+    <iframe src="https://player.vimeo.com/video/122389390?h=58841deb55" width="500" height="300" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe> 
+   
+</body>
+</html>

@@ -1,0 +1,49 @@
+@charset "UTF-*";
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+body{
+    width: 1000px;
+    margin: auto;
+    background-color: azure;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    font-family: "Anton", sans-serif;
+    font-size: 28px;
+    color: white;
+    background-color: dimgrey;
+    text-align: center;
+}
+h1#html{  
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;   
+    background-color: azure;
+    color: #DC4D25;
+    text-align: left;
+}
+h1#css{  
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;  
+    background-color: azure;
+    color: #2862E9;
+    text-align: left;
+}
+.basico{
+    font-size: 19px;
+    color: rgb(241, 96, 125);
+}
+.intermediario{
+    font-size: 19px;
+    color: rgb(180, 72, 94);
+}
+.avançado{
+    font-size: 19px;
+    color: rgb(109, 43, 57);
+}
+.destaque{
+    background-color: rgba(238, 243, 170, 0.863);
+    font-style: italic;
+}
+p{
+    text-align: justify;
+}
