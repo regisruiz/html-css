@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabela Colgroup</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+            width: 500px;
+        }
+        .cidade{
+            background-color: chartreuse;
+        }
+        .cnome{
+            background-color: gold;
+        }
+
+        caption{
+            font-weight: bold;
+            font-size: 1.3em;
+            color: blue;
+        }
+        td, th{
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+        }
+        thead{
+            background-color: lightgrey;            
+        }        
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cidade">
+            <col class="cprofissao">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Sexo</th>
+                <th>idade</th>
+                <th>Profissão</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Reginaldo Ruiz</td>
+                <td>M</td>
+                <td>50</td>
+                <td>Vendedor</td>
+            </tr>
+            <tr>
+                <td>Luciane Sena</td>
+                <td>F</td>
+                <td>47</td>
+                <td>Vendedora</td>
+            </tr>
+            <tr>
+                <td>Florisvaldo abelha</td>
+                <td>M</td>
+                <td>55</td>
+                <td>Professor</td>
+            </tr>
+            <tr>
+                <td>Juca bala</td>
+                <td>M</td>
+                <td>53</td>
+                <td>Pintor</td>
+            </tr>
+            <tr>
+                <td>Mariana Bolha</td>
+                <td>F</td>
+                <td>40</td>
+                <td>Professora</td>
+            </tr>
+            <tr>
+                <td>Américo Vespuccio</td>
+                <td>F</td>
+                <td>34</td>
+                <td>Musico</td>
+            </tr>
+
+        </tbody>
+    </table>
+    
+</body>
+</html>
