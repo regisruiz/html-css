@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 14</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+            width: 500px; 
+            height: 400px;           
+        }
+        caption{
+            font-weight: bold;
+            font-size: 1.5em;
+        }
+        thead, .media, .media_dici{
+            background-color: rgb(114, 114, 114);
+            color: white;
+        }
+        th, td{
+            border: 1px solid rgb(0, 0, 0);
+            padding: 5px;
+        }
+        td{
+            text-align: center;
+        }
+        .dici, .media_dici{
+            text-align: left;
+        }
+        .media{
+            font-weight: bold;
+        }
+        
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Notas Ano Letivo 2024</caption>
+        <thead>
+            <tr>
+                <th rowspan="2" scope="col">Área</th>
+                <th rowspan="2" scope="col">Disciplina</th>
+                <th colspan="2" scope="colgroup">Notas</th>
+                <th rowspan="2" scope="col">Média</th>
+            </tr>
+            <tr>
+                <th>Nota 1</th>
+                <th>Nota 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="4" scope="rowgroup">Exatas</th>
+                <td class="dici">Matemática</td>
+                <td>5,5</td>
+                <td>7,5</td>
+                <td>6,5</td>
+            </tr>
+            <tr>
+                 <td class="dici">Física</td>
+                 <td>8,0</td>
+                 <td>9,0</td>
+                 <td>8,5</td>
+            </tr>
+            <tr>
+                <td class="dici">Quimica</td>
+                <td>6,0</td>
+                <td>9,0</td>
+                <td>7,5</td>
+           </tr>
+           <tr>
+                <td class="dici">Biologia</td>
+                <td>5,0</td>
+                <td>8,0</td>
+                <td>7,5</td>
+            </tr>
+            <tr>
+                <th colspan="4" class="media_dici" scope="row">Média de Exatas</th>
+                <td class="media">7,5</td>
+            </tr>
+            <tr>
+                <th rowspan="2" scope="rowgroup">Humanas</th>
+                <td class="dici">História</td>
+                <td>9,0</td>
+                <td>8,0</td>
+                <td>8,5</td>                
+            </tr>
+            <tr>
+                <td class="dici">Geografia</td>
+                <td>5,0</td>
+                <td>8,0</td>
+                <td>6,5</td>
+            </tr>
+            <tr>
+                <th colspan="4" class="media_dici" scope="row">Média de Humanas</th>
+                <td class="media">7,5</td>
+            </tr>
+        </tbody>
+    </table>    
+</body>
+</html>
