@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Responsiva</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.2em;
+        }   
+        main{
+            width: 80vw;
+            margin: auto;
+        }     
+        
+        h1{
+            text-align: center;
+        }
+        p{
+            text-align: justify;
+        }
+        /*Deixar a tabela responsiva*/
+        div#container{
+            overflow-x: auto;
+        }
+        table{
+            border-collapse: collapse;
+            width: 900px;
+            margin: auto;
+        }
+        th, td{
+            border: 1px solid rgb(63, 63, 63);
+            padding: 6px;
+        }
+        thead{
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>    
+        <main>
+            <h1>Tabela Responsiva</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sit ullam neque inventore ratione quaerat, ex quis aliquam repudiandae. Pariatur excepturi suscipit hic beatae omnis dolore nisi asperiores aliquid consequuntur?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus recusandae modi alias. Dolore minus aut ex quis voluptate doloribus ut dolores sed ratione? Nostrum quis debitis quos perferendis recusandae rerum.</p>
+            <div id="container">
+                <table>
+                    <caption>Vendas ano 2024</caption>
+                    <thead>
+                        <tr>
+                            <th>Produto</th>
+                            <th>Jan</th>
+                            <th>Fev</th>
+                            <th>Mar</th>
+                            <th>Abr</th>
+                            <th>Mai</th>
+                            <th>Jun</th>
+                            <th>Jul</th>
+                            <th>Ago</th>
+                            <th>Set</th>
+                            <th>Out</th>
+                            <th>Nov</th>
+                            <th>Dez</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Calças</th>
+                            <td>204</td>
+                            <td>123</td>
+                            <td>268</td>
+                            <td>544</td>
+                            <td>89</td>
+                            <td>165</td>
+                            <td>132</td>
+                            <td>144</td>
+                            <td>178</td>
+                            <td>98</td>
+                            <td>104</td>
+                            <td>111</td>
+                        </tr>
+                        <tr>
+                            <th>Vestidos</th>
+                            <td>204</td>
+                            <td>123</td>
+                            <td>268</td>
+                            <td>544</td>
+                            <td>89</td>
+                            <td>165</td>
+                            <td>132</td>
+                            <td>144</td>
+                            <td>178</td>
+                            <td>98</td>
+                            <td>104</td>
+                            <td>111</td>
+                        </tr>
+                        <tr>
+                            <th>Blusas</th>
+                            <td>204</td>
+                            <td>123</td>
+                            <td>268</td>
+                            <td>544</td>
+                            <td>89</td>
+                            <td>165</td>
+                            <td>132</td>
+                            <td>144</td>
+                            <td>178</td>
+                            <td>98</td>
+                            <td>104</td>
+                            <td>111</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p id="textojs"></p>
+        </main>
+        <script src="js/script.js"></script>
+</body>
+</html>
