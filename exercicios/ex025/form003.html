@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            background-color: rgb(240, 239, 239);
+        }
+        .btn{
+            background-color: blue;
+            color: white;
+            border-radius: 5px;
+            padding: 5px;
+            cursor: pointer;
+            border: 1px solid darkgray;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+    <p>
+        <label for="inome">Nome:</label>
+        <input type="text" name="cnome" id="inome" required maxlength="30" placeholder="Nome Completo" autocomplete="name">
+    </p>
+    <p>
+        <label for="imedia">Média:</label>
+        <input type="number" name="cmedia" id="imedia" min="0" max="10" placeholder="0 a 10" step="0.5" required>
+    </p>
+    <p>
+        <label for="imes">Período:</label>
+        <input type="month" name="cmes" id="imes">
+    </p>
+    <p>
+        <label for="idia">Dia:</label>
+        <input type="date" name="cdia" id="idia">
+    </p>
+    <p>
+        <label for="ihora">Hora:</label>
+        <input type="time" name="chora" id="ihora">
+    </p>
+    <p>        
+        <input type="submit" value="Enviar" class="btn">
+        <input type="reset" value="Limpar" class="btn">
+    </p>
+</form>
+</body>
+</html>
