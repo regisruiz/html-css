@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(245, 245, 234);
+            font-size: 16px;
+            border-radius: 5px;          
+        }
+        fieldset{
+            width: 400px;
+            border: 1px solid lightgrey;
+            padding: 15px;
+            margin-bottom: 20px;
+
+        }
+        legend, label, select{
+            color: rgb(150, 149, 149);
+        }
+        select{
+            padding: 2px;
+        }
+        .btn{
+            background-color: blue;
+            color: white;
+            border: 1px solid gray;
+            padding: 3.5px;
+            cursor: pointer;
+        }
+        .btn:hover{
+            background-color: rgb(2, 2, 161);
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <h1>Teste Formulário</h1>
+    <form action="cadastro.php" method="get">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="csexo" id="imasc" value="M"><label for="imasc">Masculino</label>
+            <input type="radio" name="csexo" id="ifem" value="F"><label for="ifem">Feminino</label>
+
+        </fieldset>        
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <input type="checkbox" name="cfutebol" id="ifutebol"><label for="ifutebol">Futebol</label> <br>
+            <input type="checkbox" name="cbasquete" id="ibasquete"><label for="ibasquete">Basquete</label> <br>
+            <input type="checkbox" name="cnatacao" id="inatacao"><label for="inatacao">Natação</label> <br>
+            <input type="checkbox" name="cvoley" id="ivoley"><label for="ivoley">Voley</label> <br>
+        </fieldset>
+        <label for="iestado">Estado:</label>
+        <select name="cestado" id="iestado">
+            <option value="SP">São Paulo</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="PR">Paraná</option>
+            <option value="BA">Bahia</option>
+        </select>
+        <p>
+            <input type="submit" value="Enviar" class="btn">
+            <input type="reset" value="Limpar" class="btn">
+        </p>
+    </form>
+</body>
+</html>

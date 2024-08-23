@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        fieldset{
+            width: 600px;
+            border: 1px solid lightgrey;
+        }
+        legend, label{
+            color: rgb(150, 149, 149);
+        }
+        input{
+            border: 1px solid lightgrey;
+            height: 20px;
+            border-radius: 5px;          
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste Formulários</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="inome">Nome:</label>
+                <input type="text" name="cnome" id="inome" autocomplete="name" required>
+            </p>
+            <p>
+                <label for="iemail">E-mail:</label>
+                <input type="email" name="cemail" id="iemail" autocomplete="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
+            </p>
+            <p>
+                <label for="ifone">Fone:</label>
+                <input type="tel" name="cfone" id="ifone" autocomplete="tel">
+                <!--Estudar mais RegEx-->
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
