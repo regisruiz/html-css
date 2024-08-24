@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Formulários</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <h2>Soma</h2>
+        <p>
+            <label for="in1">Número 1:</label>
+            <input type="number" name="cn1" id="in1" min="0" max="50" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+        </p>
+        <p>
+            <label for="in2">Número 2:</label>
+            <input type="number" name="cn2" id="in2" min="0" max="50" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+        </p>
+        <p>
+            <label for="isoma">Soma:</label>
+            <output id="isoma" name="csoma">0</output>
+        </p>
+        <p>            
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p><hr>
+        <h2>Sua Satisfação</h2>
+        <p>
+            <label for="isat">Satisfação</label>
+            <input type="range" name="csat" id="isat" min="0" max="10" value="5"
+            oninput="ival.innerHTML = Number(isat.value)">
+            <output id="ival">5</output>
+        </p><hr>
+        <h2>Qual sua idade?</h2>
+        <p>
+            <label for="iano">Em que ano vc nasceu?</label>
+            <input type="number" name="cano" id="iano" min="1900" max="2030" required oninput="calcIdade()">            
+        </p>
+        <p>
+            <label for="iidade">Sua idade é:</label>
+            <output id="iidade">0</output>
+        </p>
+    </form>   
+    <script>
+        function calcIdade() {
+            let atual = new Date().getFullYear()
+            iidade.innerHTML = Number(atual) - Number(iano.value)
+        }
+    </script> 
+</body>
+</html>
